@@ -1,0 +1,53 @@
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Main {
+
+    // Method to sort array in descending order using Timsort
+    public static void sortArray(Integer[] myArr, int arrSize) {
+        Arrays.sort(myArr, Collections.reverseOrder());
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);  // allows user input
+
+        while (true) {
+            System.out.print("Enter array size: ");
+
+            // Validate if the entered input is an integer
+            if (!scanner.hasNextInt()) {
+                System.out.println("Input must be an integer"); //lets you know it cannot be a string inputted
+                scanner.next();  // Discards the non-integer input
+            } else { //allows integer to continue program
+                int intElements = scanner.nextInt();  // Reads the integer
+                Integer[] arr = new Integer[intElements];
+
+                // Read the elements into the array
+                System.out.println("Enter " + intElements + " integers: ");
+                for (int i = 0; i < intElements; i++) {
+                    if (scanner.hasNextInt()) {
+                        arr[i] = scanner.nextInt();
+                    } else {
+                        System.out.println("Input must be an integer.");
+                        scanner.next();  // Discard invalid input and continue
+                        i--;  // Decrement i to retry input for this index
+                    }
+                }
+
+                // Sort the array in descending order using Timsort
+                sortArray(arr, intElements);
+
+                // Output the sorted array
+                System.out.println("Sorted array in descending order: ");
+                for (int num : arr) {
+                    System.out.print(num + " ");
+                }
+
+                break;  // Exit the loop after processing the array
+            }
+        }
+
+        scanner.close();  // Close scanner after everything is done
+    }
+}
