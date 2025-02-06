@@ -2,7 +2,7 @@
 allows the user to input the size of an array and its elements, then sorts the array in descending order and outputs the sorted array. 
 
 
-1. https://github.com/SaintMil0/sortArry-Assignment/blob/main/sort.drawio.png
+1. Flowchart: https://github.com/SaintMil0/sortArry-Assignment/blob/main/sort.drawio.png
 
 2. I chose Timsort because it is a reliable hybrid sorting algorithm combining merge and insertion sort. Initially, I considered merge sort, but Timsort is optimized for real-world data, especially when the input is partially sorted, making it an efficient and practical choice.
 
