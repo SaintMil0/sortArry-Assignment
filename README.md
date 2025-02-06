@@ -10,4 +10,4 @@ allows the user to input the size of an array and its elements, then sorts the a
 
 4. video
 
-5. https://github.com/SaintMil0/sortArry-Assignment/blob/main/1st%20assignment%20(Timsort)
+5. Code: https://github.com/SaintMil0/sortArry-Assignment/blob/main/1st%20assignment%20(Timsort)
