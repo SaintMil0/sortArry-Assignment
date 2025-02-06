@@ -1,4 +1,4 @@
-```````````````````````
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -58,4 +58,4 @@ public class Main {
         scanner.close();  // Close scanner after everything is done
     }
 }
-```````````````````````
+
